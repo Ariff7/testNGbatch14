@@ -40,7 +40,7 @@ public class SoftAssertions {
 //Invalid credentials
         WebElement errorMsg = driver.findElement(By.xpath("//span[text()='Invalid credentials']"));
         String actualError=errorMsg.getText();
-        String expectedErrorMsg="Invalid credentials";
+        String expectedErrorMsg="nvalid credentials";
 
 
 
@@ -52,6 +52,7 @@ public class SoftAssertions {
         boolean isDisplayed=errorMsg.isDisplayed();
        //assert it now
        soft.assertTrue(isDisplayed);
+
 
  //to run TestCase , have to assert all the asertions that have been made
         soft.assertAll();
