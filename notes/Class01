@@ -1,0 +1,63 @@
+************testNg**************
+
+1.) What is xml ?
+      -a file format
+
+2.)How to create a maven project?
+    file--->new--->project
+    new project--->build system(maven)
+
+3.) what is Pom.XML ?
+       -it is an XML file
+       -we can add our dependencies here for the project
+
+      4.)How to add dependencies in pom.XML
+
+             <Dependencies>
+                 <dependency>
+
+                      <groupID> Selenium.org </groupID>
+                      <artifactId> selenium-java </artifactId>
+                      <version> 3.15.7 </version>
+
+                 <dependency>
+
+
+                  <dependency>
+
+                  <dependency>
+
+
+             <Dependencies>
+
+5.)What are the annotations?
+
+        1.)@Test --> all the test cases are written in this annotation
+        2.)@BeforeMethod--> this runs before every @Test annoation   ---> Pre-Conditions
+        3.)@AfterMethod--> this will run after each @Test annotation ---> Post-Condition
+
+6.) What is the purpose of enable Disable?
+     @Test(enabled=false) --> it iwll not run this test case --> we might use this if we want to not run a test case
+
+7.)What is the purpose of 'Depends on'
+     @Test(dependsOnMethods ={"Login"}) --> this test case depends on login and will be only executed if Login Passes;
+
+8.) Priority?
+
+-By default the priority is 0---> highest order
+- if two cases are there with 0 priority -->alphabetically it will go sort from a-z
+By default the priority is 0 --> highest order
+
+
+@Test(priority =3)
+ABC
+@Test(priority =1)
+DEF
+@Test(priority =2)
+GHI
+
+what will be the execution order of these test cases
+
+DEF
+GHI
+ABC
